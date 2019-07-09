@@ -145,9 +145,7 @@ body{
 	.navbar-light .navbar-toggler{
 	border:none;
 	}
-	
-element.style {
-}
+
 .navbar-light .navbar-toggler-icon {
 	background-image:none;
 }
@@ -181,7 +179,8 @@ element.style {
 	border-radius:20px;
 	background:white;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+	transition:0.5s;
 	text-decoration: none;
 	text-transform: uppercase;
 	line-height: 15px;
@@ -191,6 +190,9 @@ element.style {
 	font-size:14px;
 }
 .white-btn:hover{
+	background-image: linear-gradient(120deg, #4AB7E0 0%, #1980BA 100%);
+	color:white;
+	text-decoration: none;
 
 }
 /* .nav-text{
@@ -202,10 +204,6 @@ element.style {
     padding-right: 15px;
 	position: relative;
 	text-align:center;
-}
-.nav-text:hover{
-	background: 
-
 }
 .nav-menu .nav-item.active .nav-link, .nav-menu .nav-item:hover .nav-link {
     color: white;
@@ -306,12 +304,25 @@ element.style {
  .top-page{
 	position:relative;
 	background: #F4FCFF;
-	background: url(../images/bg_toppage.svg) no-repeat bottom right;
+	background: url(../images/bg_top_pattern.png) no-repeat top left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 	 
+ }
+ .overlay{
+	 height: 100%;
+	 width:100%;
+	 display:block;
+	 position: absolute;
+	 background: url(../images/bg_toppage.svg) no-repeat bottom right;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+	 opacity:0.9;
+
  }
 .banner{
 	margin-top: 100px;
@@ -349,7 +360,7 @@ element.style {
 	display:block;	
 }
 .img-bg{
-	width:150%;
+	width:120%;
 	height:100%;
 }
 .note{
@@ -454,7 +465,7 @@ element.style {
 
 }
 .item span{
-	background:#1F65FF;
+	background:#4AB7E0;
 	display:block;
 	margin: 0 auto;
 	width: 80px;
@@ -576,8 +587,10 @@ element.style {
 	border-radius: 25px;
 	background: #F2F5F8;
 }
+.fill-email{
+	padding:0
+}
 .form-control{
-
 	border: none;
 	height: 50px;
 	border-radius: 25px;
@@ -586,6 +599,12 @@ element.style {
 .form-control::placeholder{
 	color:#8CA0BB;
 	font-size:16px;
+}
+.form-control:focus {
+    color: #495057;
+    border: 1px solid #1980BA;
+	outline: 0;
+	box-shadow:none
 }
 .email-btn{
 	padding:0;
@@ -598,12 +617,15 @@ element.style {
 	text-transform: uppercase;
 	color: white;
 	text-align: center;
+	padding-top: 13px;
 }
-.gradient-btn span{
-	color: white;
+.gradient-btn:hover{
+	background:white;
+    -webkit-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
 	text-decoration: none;
-	vertical-align: center;
-	line-height: 52px;
+	color: #4AB7E0;
+	font-weight:bold;
 }
 .footer{
 	background: #DEF2F9;
@@ -618,11 +640,6 @@ element.style {
 }
 .term p{
 	font-size:14px;
-}
-@media (max-width: 1920px){
-	.container{
-		width: 
-	}
 }
 @media (max-width: 1440px){
 	.img-bg{
