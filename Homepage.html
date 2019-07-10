@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keyword" content="socialapp, SNSapp, ">
   <title>SNS App Landing Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
   <!--<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">-->
-  <link rel="stylesheet" media="all" href="css/style.css" />
-  <link rel="shortcut icon" href="images/ic_shotcut.png" />
+  <link rel="stylesheet" media="all" href="css/style.css"/>
+  <link rel="shortcut icon" href="images/ic_shotcut.png"/>
 </head>
 
 <body>
@@ -55,14 +57,19 @@
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 first-view_text">
           <h2>Fastest Way to Provide Your Business</h2>
-          <h4>We created this application to provide users with the latest and fastest experience in sharing personal social networks anywhere - conferences, meetings and work.</h4>
+          <h4>We created this application to provide users with the latest and fastest experience in sharing personal
+            social networks anywhere - conferences, meetings and work.</h4>
           <a class="white-btn" href="#" target="_blank">get the app</a>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 first-view_img ">
-          <img class="animate img-bg fadeInRight animated" src="images/banner.png">
+        <div class="col-xl-6 col-lg-6 col-md-6 first-view_img row">
+          <div id="animation-svg" class="col-12 banner_animation p-0">
+          </div>
+          <!-- <div class="col-12 d-flex custom-z-index ">
+            <img class="animate img-bg fadeInRight animated" src="images/banner.png">
+          </div> -->
         </div>
       </div>
-    </div>
+    </div>    
     <div class="bg_banner">
       <img src="images/bg_banner.svg" alt="background">
     </div>
@@ -118,7 +125,8 @@
 
         <div class="col-xl-6 col-lg-6 col-md-6 item-text">
           <h3>Control All Social Network in Your Hand</h3>
-          <p>The application contains the most popular social networks. Easily control your social networks with just a few taps</p>
+          <p>The application contains the most popular social networks. Easily control your social networks with just a
+            few taps</p>
         </div>
       </div>
       <div class="row">
@@ -127,7 +135,8 @@
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 order-md-1 item-text">
           <h3>Fast Scanning Social QR Code</h3>
-          <p>Modern interface and easy to manipulate. Scan QR Code and quickly receive information, links to other users' profiles when you need it.</p>
+          <p>Modern interface and easy to manipulate. Scan QR Code and quickly receive information, links to other
+            users' profiles when you need it.</p>
         </div>
 
       </div>
@@ -138,7 +147,8 @@
 
         <div class="col-xl-6 col-lg-6 col-md-6 item-text">
           <h3>Easy to Manage Your Information</h3>
-          <p>Your information can be easily edited to integrate with other application functions such as sharing business cards and sharing social networks.</p>
+          <p>Your information can be easily edited to integrate with other application functions such as sharing
+            business cards and sharing social networks.</p>
         </div>
       </div>
     </div>
@@ -218,6 +228,8 @@
       });
     });
   </script>
+
+  <script src="js/animation.js"></script>
 </body>
 
 </html>
