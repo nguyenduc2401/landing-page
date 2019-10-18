@@ -50,6 +50,12 @@ body{
 	position: relative;
 	z-index: 2;
 }
+
+.header.bottom-padding{
+	height: 140px;
+	padding-bottom: 40px;;
+}
+
 .nav-bar{
 	position:relative;
 	display:flex;
@@ -319,8 +325,12 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	 
  }
+
+ .top-page.no-pattern{
+	 background: unset!important;
+ }
+
  .overlay{
 	 height: 100%;
 	 width:100%;
@@ -429,6 +439,13 @@ body{
     height: 100%;
     overflow: hidden;
 }
+
+@media(max-width: 414px) {
+	.intro.more-bottom{
+		padding-bottom: 100px;
+	}
+}
+
 .intro-title{
 	width:50%;
 	margin: 0 auto;
@@ -595,6 +612,25 @@ body{
 	font-weight: bold;
 	text-align: center;
 }
+
+.subcribe-box_title p{
+	padding: 0px 15px;
+	width: 100%;
+	color:#333333;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.subcribe-box_title h1{
+	width: 100%;
+	color:#1980BA;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2rem;
+}
+
 .email{
 	width: 70%;
 	margin: 0px auto;
@@ -931,4 +967,12 @@ body{
 	min-height: 650px;
 	/* position: absolute; */
 	/* right: -100px; */
+}
+
+a.no-decoration {
+	text-decoration: none;
+}
+
+.third-color{
+	color: #333333;
 }
